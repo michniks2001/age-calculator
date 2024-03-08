@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const now = new Date();
             const age = now - birthday;
             const ageDate = new Date(age);
-            ageClock.textContent = `You are ${ageDate.getFullYear() - 1970} years, ${ageDate.getMonth()} months, and ${ageDate.getDate()} days old.`;
+            ageClock.textContent = `You are ${ageDate.getFullYear() - 1970} years, ${ageDate.getMonth()} months, and ${ageDate.getDate() - 1} days old.`;
         }, 1000);
     }
 
